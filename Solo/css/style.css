@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+ 
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+ 
+.card {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+ 
+.progress {
+    height: 25px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    font-weight: 500;
+    line-height: 25px;
+}
+
+ 
+.badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    margin: 2px;
+}
+ 
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+ 
+footer {
+    margin-top: auto;
+}
+
+ 
+header.bg-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+}
+
+ 
+.form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+ 
+
+ 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.2rem;
+    }
+    
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    header .row {
+        text-align: center;
+    }
+    
+    header img {
+        margin-top: 30px;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+ 
+@media (min-width: 768px) and (max-width: 992px) {
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+ 
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+ 
+.text-purple {
+    color: #6f42c1;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
